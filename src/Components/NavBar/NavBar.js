@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 import './NavBar.css'
 const NavBar = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar expand="lg">
             <Container>
-                <Navbar.Brand>AHL</Navbar.Brand>
+                <Navbar.Brand className='text-white'>AHL</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mx-auto">
