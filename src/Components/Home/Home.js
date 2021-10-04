@@ -38,8 +38,8 @@ const Home = () => {
                     <div className="why-choose-us my-3 d-flex justify-content-center align-items-center">
                         <img className="img-fluid" src={skilled} alt="" />
                         <div className="mx-3">
-                            <h4>Scholarship Facilities</h4>
-                            <p>We provide scholarship opportunities for the bright students and also for the poor students.</p>
+                            <h4>Skilled Teachers</h4>
+                            <p>A good teacher teaches in an excellent way and imparts knowledge however a great teacher transform the students and make them human.</p>
                         </div>
                     </div>
                 </Col>
@@ -47,8 +47,8 @@ const Home = () => {
                     <div className="why-choose-us my-3 d-flex justify-content-center align-items-center">
                         <img className="img-fluid" src={service} alt="" />
                         <div className="mx-3">
-                            <h4>Scholarship Facilities</h4>
-                            <p>We provide scholarship opportunities for the bright students and also for the poor students.</p>
+                            <h4>Good Service</h4>
+                            <p>We believe in quality not quantity. We provide a service that students need. Our first priority is service.</p>
                         </div>
                     </div>
                 </Col>
@@ -56,8 +56,8 @@ const Home = () => {
                     <div className="why-choose-us my-3 d-flex justify-content-center align-items-center">
                         <img className="img-fluid" src={lecture} alt="" />
                         <div className="mx-3">
-                            <h4>Scholarship Facilities</h4>
-                            <p>We provide scholarship opportunities for the bright students and also for the poor students.</p>
+                            <h4>Free Lecture Sheet</h4>
+                            <p>We provide qualified free lecture sheet and hand notes before the lecture.</p>
                         </div>
                     </div>
                 </Col>
