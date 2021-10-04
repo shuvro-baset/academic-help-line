@@ -2,11 +2,14 @@ import React from 'react';
 import { Navbar, Container, Nav,  } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './NavBar.css'
+import logo from '../../images/logo.png';
 const NavBar = () => {
     return (
         <Navbar expand="lg">
             <Container>
-                <Navbar.Brand className='text-white'>AHL</Navbar.Brand>
+                <Navbar.Brand className='text-white'>
+                    <img className="img-fluid w-25 h-25" src={logo} alt="" />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mx-auto">
