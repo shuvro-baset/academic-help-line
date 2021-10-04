@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import {  Col, Container, Row } from 'react-bootstrap';
 import img from '../../images/banner.png';
 import './Home.css'
 import scholarship from '../../images/scholarship.png'
@@ -77,9 +77,9 @@ const Home = () => {
                     
                 {
                     service.map(serve =>
-                        <Col md={3}>
+                        <Col md={3} key={serve.id}>
                             <Service
-                                key={serve.id}
+                                
                                 serve={serve}
                             ></Service>
                         </Col>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import './Service.css'
 const Service = (props) => {
     const {title, description, img} = props.serve;
