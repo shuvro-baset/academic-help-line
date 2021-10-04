@@ -6,7 +6,7 @@ const Service = (props) => {
     const {title, description, img, price} = props.serve;
     
     return (
-        <Card className='custom-card text-white'>
+        <Card className='custom-card text-white my-3'>
             <img src={img} alt="" className="img-fluid" />
             <Card.Body className="card-body">
                 <h6 className="text-center mt-3">{title}</h6>

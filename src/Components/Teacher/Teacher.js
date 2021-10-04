@@ -4,7 +4,7 @@ import './Teacher.css'
 const Teacher = (props) => {
 
     // destructuring teacher data.
-    const {name, designation, subject, img} = props.teacher;
+    const {name, designation, subject, img, Qualification, number_of_lecture_per_month} = props.teacher;
 
     return (
         <Card className='teacher-card my-3 text-white p-4'>
@@ -14,6 +14,9 @@ const Teacher = (props) => {
             <p>  <b>Name:</b> {name}</p>
             <p>  <b>Designation:</b> {designation} </p>
             <p>  <b>Subject:</b> {subject}</p>
+            <p>  <b>Qualification:</b> {Qualification}</p>
+            <p>  <b>Lecture Number:</b> {number_of_lecture_per_month} </p>
+
         </Card>
     );
 };
