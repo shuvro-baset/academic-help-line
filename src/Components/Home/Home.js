@@ -1,13 +1,23 @@
-import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 import img from '../../images/banner-img.jpg'
 import './Home.css'
 import scholarship from '../../images/scholarship.png'
 import skilled from '../../images/skills.png';
-import service from '../../images/consult.png';
+import serviceImg from '../../images/consult.png';
 import lecture from '../../images/lecture-sheet.png';
+import Service from '../Service/Service';
 
 const Home = () => {
+    const [service, setService] = useState([])
+
+    useEffect(() => {
+        fetch('./service-data.JSON')
+            .then(res => res.json())
+            .then(data => setService(data.slice(0,4)))
+    }, [])
+
+
     return (
         <Container className="text-white my-5">
             <Row>
@@ -45,7 +55,7 @@ const Home = () => {
                 </Col>
                 <Col md={6}>
                     <div className="why-choose-us my-3 d-flex justify-content-center align-items-center">
-                        <img className="img-fluid" src={service} alt="" />
+                        <img className="img-fluid" src={serviceImg} alt="" />
                         <div className="mx-3">
                             <h4>Good Service</h4>
                             <p>We believe in quality not quantity. We provide a service that students need. Our first priority is service.</p>
@@ -61,6 +71,15 @@ const Home = () => {
                         </div>
                     </div>
                 </Col>
+            </Row>
+            <Row>
+                <h1 className="text-center">Our Services</h1>
+                {
+                    service.map(serve => <Service
+                        key={serve.id}
+                        serve={serve}
+                    ></Service>)
+                }
             </Row>
         </Container>
     );
