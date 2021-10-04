@@ -5,7 +5,8 @@ import './Footer.css'
 const Footer = () => {
     return (
         <Container>
-            <Row className='text-white'>
+            <hr  className='text-white'/>
+            <Row className='text-white mt-5'>
                 <Col md={3} className='d-flex flex-column'>
                     <img className="img-fluid w-25 h-50" src={logo} alt="" /> 
                     <p><i className="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
@@ -34,7 +35,7 @@ const Footer = () => {
                     <p><a href="/">Security</a></p>
                 </Col>
             </Row>
-            <Row className="text-white ">
+            <Row className="text-white">
                 <div className='d-flex justify-content-center align-items-around my-3'>
                     <i className="fab fa-facebook p-4"></i>
                     <i className="fab fa-twitter p-4"></i>

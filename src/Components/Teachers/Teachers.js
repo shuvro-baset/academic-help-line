@@ -15,9 +15,11 @@ const Teachers = () => {
             <Row>
             {
                 teachers.map(teacher => 
-                <Col md={4}>
+                <Col md={4}
+                key={teacher.id} // passing key value for ignoring react warning
+                >
                     <Teacher
-                        key={teacher.id} // passing key value for ignoring react warning
+                        
                         teacher={teacher} // pass teacher data
                     ></Teacher>
                 </Col>

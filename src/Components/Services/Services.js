@@ -15,9 +15,9 @@ const Services = () => {
             <Row>
                 {
                 service.map(serve => 
-                    <Col md={4} className='my-3'>
+                    <Col md={4} className='my-3' key={serve.id}>
                         <Service
-                        key={serve.id}
+                        
                         serve={serve}
                         ></Service>
                     </Col>

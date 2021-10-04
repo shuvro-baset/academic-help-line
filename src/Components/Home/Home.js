@@ -33,7 +33,7 @@ const Home = () => {
             </Row>
             
             <Row className="my-5">
-                <h1 className='text-center'>Why Choose Us</h1>
+                <h1 className='text-center my-5'>Why Choose Us</h1>
                 
                 <Col md={6} className="">
                     <div className="why-choose-us my-3 d-flex justify-content-center align-items-center ">
@@ -73,7 +73,7 @@ const Home = () => {
                 </Col>
             </Row>
             <Row>
-                <h1 className="text-center">Our Services</h1>
+                <h1 className="text-center my-5">Our Services</h1>
                     
                 {
                     service.map(serve =>
