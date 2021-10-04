@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {  Col, Container, Row } from 'react-bootstrap';
+import {  Col, Container, Form, Row } from 'react-bootstrap';
 import img from '../../images/banner.png';
 import './Home.css'
 import scholarship from '../../images/scholarship.png'
@@ -7,6 +7,7 @@ import skilled from '../../images/skills.png';
 import serviceImg from '../../images/consult.png';
 import lecture from '../../images/lecture-sheet.png';
 import Service from '../Service/Service';
+import Button from '@restart/ui/esm/Button';
 
 const Home = () => {
     const [service, setService] = useState([])
@@ -74,7 +75,6 @@ const Home = () => {
             </Row>
             <Row>
                 <h1 className="text-center my-5">Our Services</h1>
-                    
                 {
                     service.map(serve =>
                         <Col md={3} key={serve.id}>
@@ -86,7 +86,18 @@ const Home = () => {
                     
                     )
                 }
-                    
+            </Row>
+            <Row>
+                <Col md={12} className="my-5">
+                    <div className="my-5 p-5 d-flex flex-column justify-content-center align-items-center subscribe-part">
+                        <h1>Subscribe to get the latest offer.</h1>
+                        <p>We recommended you to subscribe our channel, drop your email below to get daily about us.</p>                        
+                        <div className="d-flex align-items-center justify-content-between subscribe-input shadow-lg">
+                            <input type="email" placeholder="Enter Your Email Address" />
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                </Col>
             </Row>
         </Container>
     );

@@ -12,8 +12,6 @@ const Teacher = (props) => {
             <p>  <b>Name:</b> {name}</p>
             <p>  <b>Designation:</b> {designation} </p>
             <p>  <b>Subject:</b> {subject}</p>
-            <p>  <b>Lecture Number:</b> {number_of_lecture_per_month}</p>
-            <p>  <b>Salary:</b> <small className='fw-bolder'><span className='fw-bolder'>&#2547;</span> {salary}</small> </p>
         </Card>
     );
 };

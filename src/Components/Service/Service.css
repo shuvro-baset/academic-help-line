@@ -6,3 +6,10 @@
 .custom-card img {
     height: 200px;
 }
+.card-body{
+    height: 210px;
+}
+.card-body h6{
+    color: rgb(208, 140, 240);
+    font-size: 18px;
+}
