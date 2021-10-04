@@ -19,7 +19,6 @@ const Teachers = () => {
                 key={teacher.id} // passing key value for ignoring react warning
                 >
                     <Teacher
-                        
                         teacher={teacher} // pass teacher data
                     ></Teacher>
                 </Col>

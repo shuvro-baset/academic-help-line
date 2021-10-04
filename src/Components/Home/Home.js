@@ -40,7 +40,7 @@ const Home = () => {
                         <img className="img-fluid" src={scholarship} alt="" />
                         <div className="mx-3">
                             <h4>Scholarship Facilities</h4>
-                            <p>We provide scholarship opportunities for the bright students and also for the poor students.</p>
+                            <p>Money can not stop your learning. We provide scholarship opportunities for the bright students and also for the poor students.</p>
                         </div>
                     </div>
                 </Col>
