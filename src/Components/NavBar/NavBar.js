@@ -12,7 +12,7 @@ const NavBar = () => {
                 <Nav className="mx-auto">
                     <NavLink className="menu" to="/home">Home</NavLink>
                     <NavLink className="menu" to="/services">Services</NavLink>
-                    <NavLink className="menu" to="/about">Gallery</NavLink>
+                    <NavLink className="menu" to="/teachers">Teacher</NavLink>
                     <NavLink className="menu" to="/about">About</NavLink>
                     <NavLink className="menu" to="/link">Contact</NavLink>
 

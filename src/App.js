@@ -8,6 +8,7 @@ import Services from './Components/Services/Services';
 import About from './Components/About/About';
 import NotFound from './Components/NotFound/NotFound';
 import Footer from './Components/Footer/Footer';
+import Teachers from './Components/Teachers/Teachers';
 
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route  path="/services">
             <Services></Services>
+          </Route>
+          <Route path="/teachers">
+            <Teachers></Teachers>
           </Route>
           <Route path="/about">
             <About></About>

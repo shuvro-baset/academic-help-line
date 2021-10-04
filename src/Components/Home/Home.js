@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import img from '../../images/banner-img.jpg'
+import img from '../../images/banner.png';
 import './Home.css'
 import scholarship from '../../images/scholarship.png'
 import skilled from '../../images/skills.png';
@@ -27,7 +27,7 @@ const Home = () => {
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi omnis aspernatur, tenetur quia veritatis repellat dolorem in, dicta odit doloribus eaque, commodi explicabo tempora animi illo aliquid dignissimos suscipit. Possimus.</p>
                     </div>
                 </Col>
-                <Col md={6}>
+                <Col md={6} className='p-3'>
                     <img className="img-fluid" src={img} alt="" />
                 </Col>
             </Row>
@@ -74,12 +74,19 @@ const Home = () => {
             </Row>
             <Row>
                 <h1 className="text-center">Our Services</h1>
+                    
                 {
-                    service.map(serve => <Service
-                        key={serve.id}
-                        serve={serve}
-                    ></Service>)
+                    service.map(serve =>
+                        <Col md={3}>
+                            <Service
+                                key={serve.id}
+                                serve={serve}
+                            ></Service>
+                        </Col>
+                    
+                    )
                 }
+                    
             </Row>
         </Container>
     );
