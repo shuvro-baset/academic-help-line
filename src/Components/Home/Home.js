@@ -24,7 +24,7 @@ const Home = () => {
                 <Col md={6} className="d-flex justify-content-center align-items-center">
                     <div >
                         <h1>Academic Help Line</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi omnis aspernatur, tenetur quia veritatis repellat dolorem in, dicta odit doloribus eaque, commodi explicabo tempora animi illo aliquid dignissimos suscipit. Possimus.</p>
+                        <p>AHL provides accurate, comprehensive and quality education for students in order to assist students to make a good career. We believe in our services. Please come and visit our center for more information.</p>
                     </div>
                 </Col>
                 <Col md={6} className='p-3'>
