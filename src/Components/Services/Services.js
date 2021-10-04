@@ -3,8 +3,10 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Service from '../Service/Service';
 
 const Services = () => {
+    // set service data using useState method.
     const [service, setService] = useState([])
 
+    // loading service data.
     useEffect(() => {
         fetch('./service-data.JSON')
             .then(res => res.json())
@@ -14,6 +16,7 @@ const Services = () => {
         <Container>
             <Row>
                 {
+                // showing service data dynamically.
                 service.map(serve => 
                     <Col md={4} className='my-3' key={serve.id}>
                         <Service
@@ -21,7 +24,6 @@ const Services = () => {
                         serve={serve}
                         ></Service>
                     </Col>
-
                 )}
             </Row>
         </Container>

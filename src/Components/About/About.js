@@ -1,16 +1,15 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-// import about from '../../images/about.jpg'
 import './About.css'
 
 const About = () => {
     return (
         <Container>
-            <Row className="d-flex justify-content-center align-items-center my-5">
+            <Row className="d-flex justify-content-center align-items-center my-5 text-white">
                 <Col md={10}>
                 <div className='about-container'>
                     <div className="about-text">
-                        <h1 className='text-center'>About Us</h1>
+                        <h1 className='text-center fw-bolder'>About Us</h1>
                         <p className="p-3 text-justify"> We help students develop the skills and knowledge they need for a bright future. Best in Class students benefit from individual attention, active instruction in small groups,
                             and engaging course material aligned with common standards.
                             Our programs move 5-12 students of all abilities towards the top of their class, 
@@ -24,7 +23,6 @@ const About = () => {
                     <div className="color-overlay"></div>
                 </div>
                 </Col>
-                
             </Row>
         </Container>
     );

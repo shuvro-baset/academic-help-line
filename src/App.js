@@ -16,7 +16,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <NavBar></NavBar>
+      {/* navbar  */}
+        <NavBar></NavBar> 
+        {/* Route start */}
         <Switch>
           <Route exact path="/">
             <Home></Home>
@@ -40,6 +42,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        {/* Footer */}
         <Footer></Footer>
       </Router>
     </div>

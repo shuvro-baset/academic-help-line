@@ -3,8 +3,11 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Teacher from '../Teacher/Teacher';
 
 const Teachers = () => {
+
+    // set teacher data using useState method
     const [teachers, setTeachers] = useState([]);
 
+    // loading teacher data.
     useEffect(() => {
         fetch('./teachers-data.JSON')
             .then(res => res.json())
@@ -14,6 +17,7 @@ const Teachers = () => {
         <Container>
             <Row>
             {
+                // showing teacher data 
                 teachers.map(teacher => 
                 <Col md={4}
                 key={teacher.id} // passing key value for ignoring react warning

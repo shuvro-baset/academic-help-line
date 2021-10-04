@@ -2,7 +2,9 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import './Teacher.css'
 const Teacher = (props) => {
-    const {name, designation, subject, salary, img, number_of_lecture_per_month} = props.teacher;
+
+    // destructuring teacher data.
+    const {name, designation, subject, img} = props.teacher;
 
     return (
         <Card className='teacher-card my-3 text-white p-4'>

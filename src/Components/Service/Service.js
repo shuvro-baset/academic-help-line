@@ -2,10 +2,10 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import './Service.css'
 const Service = (props) => {
+    // destructuring service data 
     const {title, description, img, price} = props.serve;
     
     return (
-
         <Card className='custom-card text-white'>
             <img src={img} alt="" className="img-fluid" />
             <Card.Body className="card-body">
@@ -17,7 +17,6 @@ const Service = (props) => {
                 <p>Fee: &#2547; {price}</p>
             </Card.Footer>
         </Card>
-            
     );
 };
 

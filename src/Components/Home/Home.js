@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import {  Col, Container, Form, Row } from 'react-bootstrap';
-import img from '../../images/banner.png';
+import {  Col, Container, Row } from 'react-bootstrap';
+import img from '../../images/banner2.png';
 import './Home.css'
 import scholarship from '../../images/scholarship.png'
 import skilled from '../../images/skills.png';
 import serviceImg from '../../images/consult.png';
 import lecture from '../../images/lecture-sheet.png';
 import Service from '../Service/Service';
-import Button from '@restart/ui/esm/Button';
 
 const Home = () => {
+    // set service data using useState method.
     const [service, setService] = useState([])
-
+    // loading service data 
     useEffect(() => {
         fetch('./service-data.JSON')
             .then(res => res.json())
@@ -21,9 +21,10 @@ const Home = () => {
 
     return (
         <Container className="text-white my-5">
+        {/* banner part  */}
             <Row>
                 <Col md={6} className="d-flex justify-content-center align-items-center">
-                    <div >
+                    <div className='banner-text'>
                         <h1>Academic Help Line</h1>
                         <p>AHL provides accurate, comprehensive and quality education for students in order to assist students to make a good career. We believe in our services. Please come and visit our center for more information.</p>
                     </div>
@@ -32,7 +33,7 @@ const Home = () => {
                     <img className="img-fluid" src={img} alt="" />
                 </Col>
             </Row>
-            
+        {/* why choose us part  */}
             <Row className="my-5">
                 <h1 className='text-center my-5'>Why Choose Us</h1>
                 
@@ -73,13 +74,15 @@ const Home = () => {
                     </div>
                 </Col>
             </Row>
+
+            {/* service section  */}
             <Row>
                 <h1 className="text-center my-5">Our Services</h1>
                 {
+                    // showing service data dynamically
                     service.map(serve =>
                         <Col md={3} key={serve.id}>
                             <Service
-                                
                                 serve={serve}
                             ></Service>
                         </Col>
@@ -87,11 +90,14 @@ const Home = () => {
                     )
                 }
             </Row>
+
+            {/* subscription section */}
             <Row>
                 <Col md={12} className="my-5">
                     <div className="my-5 p-5 d-flex flex-column justify-content-center align-items-center subscribe-part">
                         <h1>Subscribe to get the latest offer.</h1>
-                        <p>We recommended you to subscribe our channel, drop your email below to get daily about us.</p>                        
+                        <p>We recommended you to subscribe our channel, drop your email below to get daily about us.</p>
+                        
                         <div className="d-flex align-items-center justify-content-between subscribe-input shadow-lg">
                             <input type="email" placeholder="Enter Your Email Address" />
                             <button>Subscribe</button>
