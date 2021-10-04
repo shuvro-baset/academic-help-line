@@ -9,6 +9,9 @@
 .card-body{
     height: 225px;
 }
+.card-body p{
+    font-size: 14px;
+}
 .card-body h6{
     color: #fff;
     font-size: 20px;
